@@ -1,0 +1,101 @@
+[versions]
+# Existing versions (ensure they are up-to-date)
+androidApplication = "8.8.2" # Or your current version
+composeAuth = "3.1.4"
+coreKtx = "1.16.0"
+credentialsPlayServicesAuth = "1.5.0"
+googleid = "1.1.1"
+hiltAndroid = "2.56.2"
+hiltAndroidCompiler = "2.56.2"
+hiltNavigationCompose = "1.2.0"
+kotlinxSerializationJson = "1.6.0"
+lifecycleRuntimeKtx = "2.9.0"
+activityCompose = "1.10.1"
+composeBom = "2025.05.01"
+junit = "4.13.2"
+androidxJunit = "1.2.1"
+espressoCore = "3.6.1"
+
+# New versions for Supabase and related libraries
+# Check latest versions from https://github.com/supabase-community/supabase-kt
+# and https://developer.android.com/jetpack/androidx/releases/compose-navigation
+# and https://developer.android.com/jetpack/androidx/releases/compose-material3
+# and https://github.com/Kotlin/kotlinx.coroutines
+# and https://ktor.io/docs/client-dependencies.html
+materialIconsExtended = "КОМПОЗЕ_ВЕРСИЯ"
+supabaseKt = "3.1.4" # Replace with the latest stable version
+ktor = "3.1.2" # Replace with the latest stable version
+kotlinxCoroutines = "1.10.1" # Replace with the latest stable version
+composeNavigation = "2.9.0" # Replace with the latest stable version
+composeMaterial3 = "1.3.2" # Replace with the latest stable version
+kotlin = "2.0.0"
+workRuntimeKtx = "2.10.1"
+ksp = "2.0.0-1.0.24"
+hilt = "2.56.2"
+roomRuntimeAndroid = "2.7.1"
+roomCompiler = "2.7.1"
+ycharts = "2.1.0"
+firebaseCrashlyticsBuildtools = "3.0.3"
+coilCompose = "2.6.0"
+
+[libraries]
+# Existing libraries
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-credentials = { module = "androidx.credentials:credentials", version.ref = "credentialsPlayServicesAuth" }
+androidx-credentials-play-services-auth = { module = "androidx.credentials:credentials-play-services-auth", version.ref = "credentialsPlayServicesAuth" }
+androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "materialIconsExtended" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "composeMaterial3"}
+
+androidx-work-runtime-ktx = { module = "androidx.work:work-runtime-ktx", version.ref = "workRuntimeKtx" }
+compose-auth = { module = "io.github.jan-tennert.supabase:compose-auth", version.ref = "composeAuth" }
+googleid = { module = "com.google.android.libraries.identity.googleid:googleid", version.ref = "googleid" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidxJunit" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+
+# Supabase client and plugins
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+supabase-bom = { group = "io.github.jan-tennert.supabase", name = "bom", version.ref = "supabaseKt"}
+supabase-client = { group = "io.github.jan-tennert.supabase", name = "supabase-kt" }
+supabase-auth = { group = "io.github.jan-tennert.supabase", name = "auth-kt" }
+supabase-postgrest = { group = "io.github.jan-tennert.supabase", name = "postgrest-kt" }
+
+# Ktor client (choose one, e.g., CIO for multiplatform, Android for Android-specific)
+ktor-client-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
+ktor-client-android = { group = "io.ktor", name = "ktor-client-android", version.ref = "ktor" }
+
+# Kotlin Coroutines
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinxCoroutines" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
+
+# Compose Navigation
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "composeNavigation" }
+
+# Hilt
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
+androidx-room-runtime-android = { group = "androidx.room", name = "room-runtime-android", version.ref = "roomRuntimeAndroid" }
+
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomCompiler" }
+ycharts = { group = "co.yml", name = "ycharts", version.ref = "ycharts" }
+firebase-crashlytics-buildtools = { group = "com.google.firebase", name = "firebase-crashlytics-buildtools", version.ref = "firebaseCrashlyticsBuildtools" }
+
+coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coilCompose" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "androidApplication" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+hiltAndroid = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" } # Убедитесь, что это есть

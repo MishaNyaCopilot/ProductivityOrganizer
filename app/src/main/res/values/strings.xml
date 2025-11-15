@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ProdOrganizer</string>
+    <string name="supabase_url">SUPABASE_URL</string>
+    <string name="supabase_anon_key">SUPABASE_ANON_KEY</string>
+</resources>
